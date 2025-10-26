@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Billing System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧾 Smart Billing System</h1>
+
+    <table id="productTable">
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Quantity</th>
+          <th>Price (₹)</th>
+          <th>Total (₹)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div class="controls">
+      <button class="btn add" onclick="addRow()">➕ Add Product</button>
+      <button class="btn calc" onclick="calculateBill()">🧮 Generate Bill</button>
+    </div>
+
+    <div class="discount-section">
+      <label for="discountInput">Discount (%):</label>
+      <input type="number" id="discountInput" placeholder="Enter discount %" min="0" max="100" />
+    </div>
+
+    <div id="result" class="bill-section"></div>
+
+    <div class="controls">
+      <button class="btn save" onclick="downloadBill()">💾 Download Bill</button>
+      <button class="btn clear" onclick="resetBill()">🔄 Reset</button>
+    </div>
+  </div>
+
+  <footer>© 2025 Smart Billing System | Sem 1 Mini Project | Made by Mohamed Idrees</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
